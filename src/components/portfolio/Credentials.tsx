@@ -56,12 +56,12 @@ export function Certifications() {
         </div>
 
         {/* Certification groups */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
+        <div className="mx-auto mt-16 flex max-w-3xl flex-col gap-8">
           {certificationGroups.map((group, gi) => {
             const Icon = categoryIcons[group.icon] || BadgeCheck;
             return (
               <Reveal key={group.title} delay={gi * 100}>
-                <div className="glass relative overflow-hidden rounded-3xl p-6">
+                <div className="glass relative overflow-hidden rounded-3xl p-6 sm:p-8">
                   <div className="absolute -top-20 -right-20 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
                   <div className="relative">
                     <div className="flex items-center gap-3">
@@ -70,7 +70,7 @@ export function Certifications() {
                       </span>
                       <h3 className="font-display text-lg font-semibold">{group.title}</h3>
                     </div>
-                    <ul className="mt-6 space-y-4">
+                    <ul className="mt-6 space-y-3">
                       {group.items.map((item, ii) => (
                         <li
                           key={`${item.title}-${ii}`}
@@ -78,9 +78,9 @@ export function Certifications() {
                         >
                           <Award className="mt-0.5 h-4 w-4 shrink-0 text-secondary" />
                           <div className="min-w-0 flex-1">
-                            <div className="flex flex-wrap items-center gap-2">
+                            <div className="flex flex-col gap-0.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
                               <span className="font-medium text-foreground">{item.title}</span>
-                              <span className="text-xs text-muted-foreground">— {item.issuer}</span>
+                              <span className="text-xs text-muted-foreground">{item.issuer}</span>
                             </div>
                             <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                               {item.date && <span>{item.date}</span>}
@@ -89,9 +89,7 @@ export function Certifications() {
                                   Valid: {item.validity}
                                 </span>
                               )}
-                              {item.certNo && (
-                                <span className="truncate">Cert: {item.certNo}</span>
-                              )}
+                              {item.certNo && <span className="truncate">Cert: {item.certNo}</span>}
                             </div>
                             {item.tasks && item.tasks.length > 0 && (
                               <p className="mt-1 text-xs text-muted-foreground">
@@ -99,7 +97,6 @@ export function Certifications() {
                               </p>
                             )}
                           </div>
-                          <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
                         </li>
                       ))}
                     </ul>
