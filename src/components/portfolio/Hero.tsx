@@ -163,7 +163,7 @@ export function Hero() {
             <div className="glass absolute inset-3 grid place-items-center overflow-hidden rounded-full">
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-full opacity-40"
+                className="absolute inset-0 rounded-full opacity-25"
                 style={{
                   backgroundImage:
                     "repeating-conic-gradient(from 0deg, transparent 0deg 12deg, color-mix(in oklab, var(--secondary) 20%, transparent) 12deg 13deg)",
