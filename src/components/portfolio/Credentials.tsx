@@ -1,4 +1,4 @@
-import { Award, BadgeCheck, Brain, Briefcase, ChartColumn, Cloud, Code, ExternalLink, Trophy } from "lucide-react";
+import { Award, BadgeCheck, Brain, Briefcase, ChartColumn, Cloud, Code, Trophy } from "lucide-react";
 import { achievements, certificationGroups, internships } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
