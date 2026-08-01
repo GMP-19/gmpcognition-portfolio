@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { profile, stats } from "@/data/portfolio";
+import profilePhoto from "@/assets/profile-photo.jpg.asset.json";
 
 function useTyping(words: readonly string[]) {
   const [text, setText] = useState("");
