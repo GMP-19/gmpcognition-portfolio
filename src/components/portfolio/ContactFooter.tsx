@@ -23,18 +23,42 @@ const details = [
   { label: "Resume", value: "View / Download", href: profile.resume, Icon: FileText },
 ];
 
+const EMAILJS_SERVICE_ID = "service_ggdfu6s";
+const EMAILJS_TEMPLATE_ID = "template_2ev863a";
+const EMAILJS_PUBLIC_KEY = "z_Xp0QBSxAVk-55rc";
+
 export function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const body = `Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0A%0D%0A${form.message}`;
-    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
-      form.subject || "Portfolio enquiry",
-    )}&body=${body}`;
-    toast.success("Opening your email client…", {
-      description: "Your message is pre-filled and ready to send.",
-    });
+    setSending(true);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          reply_to: form.email,
+          subject: form.subject || "Portfolio enquiry",
+          message: form.message,
+          to_email: profile.email,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY },
+      );
+      toast.success("Message sent!", {
+        description: "Thanks for reaching out — I'll reply soon.",
+      });
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch {
+      toast.error("Couldn't send your message", {
+        description: `Please email me directly at ${profile.email}.`,
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   const field =
