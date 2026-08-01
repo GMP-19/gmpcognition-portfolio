@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { profile, stats } from "@/data/portfolio";
+import profilePhoto from "@/assets/profile-photo.jpg.asset.json";
 
 function useTyping(words: readonly string[]) {
   const [text, setText] = useState("");
@@ -169,10 +170,11 @@ export function Hero() {
                     "repeating-conic-gradient(from 0deg, transparent 0deg 12deg, color-mix(in oklab, var(--secondary) 20%, transparent) 12deg 13deg)",
                 }}
               />
-              <span className="text-gradient-anim relative font-display text-7xl font-bold">PK</span>
-              <span className="absolute bottom-10 text-[0.65rem] tracking-[0.35em] text-muted-foreground uppercase">
-                AI Engineer
-              </span>
+              <img
+                src={profilePhoto.url}
+                alt="Praveen Kumar Gopinath Manjula"
+                className="relative h-full w-full rounded-full object-cover"
+              />
             </div>
 
             {/* orbiting nodes */}
