@@ -15,7 +15,7 @@ export const profile = {
     "Cybersecurity",
   ],
   intro:
-    "I am a Master's student in Artificial Intelligence at Brandenburg University of Technology (BTU), Germany. Passionate about designing intelligent systems using AI, Machine Learning, Computer Vision, IoT, and Cloud Computing. I enjoy transforming data into impactful real-world solutions and continuously learning emerging technologies.",
+    "Aspiring AI Engineer with a strong foundation in Artificial Intelligence, Machine Learning, Computer Vision, and dedicated to creating innovative, data-driven solutions.",
   email: "praveenkumar111903@gmail.com",
   phone: "+49 15510861181",
   location: "Berlin, Germany",
