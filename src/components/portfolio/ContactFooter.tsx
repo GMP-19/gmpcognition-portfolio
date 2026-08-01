@@ -148,9 +148,10 @@ export function Contact() {
               />
               <button
                 type="submit"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold transition-transform hover:scale-[1.03]"
+                disabled={sending}
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold transition-transform hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Send Message <Send className="h-4 w-4" />
+                {sending ? "Sending…" : "Send Message"} <Send className="h-4 w-4" />
               </button>
             </form>
           </Reveal>
