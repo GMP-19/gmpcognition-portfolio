@@ -87,6 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Praveen Kumar Gopinath Manjula" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Praveen Kumar Gopinath Manjula | AI Engineer" },
+      { name: "twitter:title", content: "Praveen Kumar Gopinath Manjula | AI Engineer" },
+      { property: "og:description", content: "Portfolio of Praveen Kumar Gopinath Manjula, Artificial Intelligence Master's student at BTU Germany." },
+      { name: "twitter:description", content: "Portfolio of Praveen Kumar Gopinath Manjula, Artificial Intelligence Master's student at BTU Germany." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2fa9debb-35b3-4f3a-aaf4-74a13f749e2e/id-preview-43fa7c5f--86537613-4852-4dfe-ba85-93af99d5cc4d.lovable.app-1785588812854.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2fa9debb-35b3-4f3a-aaf4-74a13f749e2e/id-preview-43fa7c5f--86537613-4852-4dfe-ba85-93af99d5cc4d.lovable.app-1785588812854.png" },
     ],
     links: [
       {
