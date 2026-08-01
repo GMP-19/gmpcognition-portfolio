@@ -53,14 +53,6 @@ export function About() {
                 solutions.
               </p>
               <p>
-                <span className="font-semibold text-foreground">
-                  Praveen Kumar Gopinath Manjula
-                </span>{" "}
-                is a 22-year-old Artificial Intelligence graduate student currently pursuing a
-                Master's degree in Artificial Intelligence at Brandenburg University of Technology
-                (BTU), Germany.
-              </p>
-              <p>
                 Originally from India, he completed his Bachelor's degree in Artificial Intelligence
                 at SRM University, Chennai, graduating in 2025 before relocating to Germany to
                 continue his higher education.
