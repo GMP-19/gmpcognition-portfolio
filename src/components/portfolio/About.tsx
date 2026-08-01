@@ -47,11 +47,6 @@ export function About() {
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal className="glass glass-hover rounded-3xl p-8">
             <div className="space-y-4 leading-relaxed text-muted-foreground">
-              <p className="text-lg font-medium text-foreground">
-                Aspiring AI Engineer with a strong foundation in Artificial Intelligence, Machine
-                Learning, Computer Vision, and dedicated to creating innovative, data-driven
-                solutions.
-              </p>
               <p>
                 Originally from India, he completed his Bachelor's degree in Artificial Intelligence
                 at SRM University, Chennai, graduating in 2025 before relocating to Germany to
