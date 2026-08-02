@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { profile, stats } from "@/data/portfolio";
-const profilePhoto = "/Profile.jpeg";
+const profilePhoto = "/Profile.jpg";
 
 function useTyping(words: readonly string[]) {
   const [text, setText] = useState("");
