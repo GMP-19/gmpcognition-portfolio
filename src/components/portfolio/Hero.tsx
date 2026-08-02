@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { profile, stats } from "@/data/portfolio";
 import profilePhoto from "@/assets/profile-photo.jpg.asset.json";
+const profilePhoto = "/Profile.jpeg";
 
 function useTyping(words: readonly string[]) {
   const [text, setText] = useState("");
