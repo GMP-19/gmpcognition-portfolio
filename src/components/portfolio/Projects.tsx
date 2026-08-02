@@ -38,9 +38,11 @@ export function Projects() {
 
                 <div className="flex flex-1 flex-col p-6">
                   <p className="text-sm text-secondary">{project.subtitle}</p>
-                  <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
-                    <CalendarDays className="h-3.5 w-3.5" /> {project.period}
-                  </p>
+                  {project.period && (
+                    <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+                      <CalendarDays className="h-3.5 w-3.5" /> {project.period}
+                    </p>
+                  )}
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {project.description}
                   </p>
