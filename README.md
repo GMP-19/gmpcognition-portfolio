@@ -76,9 +76,9 @@ Biography:
 
 Praveen Kumar Gopinath Manjula is a 22-year-old Artificial Intelligence graduate student currently pursuing a Master's degree in Artificial Intelligence at Brandenburg University of Technology (BTU), Germany.
 
-Originally from India, he completed his Bachelor's degree in Artificial Intelligence at SRM University, Chennai, graduating in 2025 before relocating to Germany to continue his higher education.
+Originally from India, I completed his Bachelor's degree in Artificial Intelligence at SRM University, Chennai, graduating in 2025 before relocating to Germany to continue his higher education.
 
-He enjoys working with Artificial Intelligence, Machine Learning, Data Science, Computer Vision, Cloud Computing, IoT, and Cybersecurity.
+I enjoy working with Artificial Intelligence, Machine Learning, Data Science, Computer Vision, Cloud Computing, IoT, and Cybersecurity.
 
 Outside academics, he enjoys:
 
