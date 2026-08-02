@@ -109,13 +109,24 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href={profile.resume}
-              target="_blank"
-              rel="noreferrer"
-              className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-secondary"
-            >
-              <Download className="h-4 w-4" /> Download Resume
-            </a>
+  href="/Praveen_Kumar_Resume_EN.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-secondary"
+>
+  <Download className="h-4 w-4" />
+  Resume 🇬🇧
+</a>
+
+<a
+  href="/Praveen_Kumar_Resume_DE.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-secondary"
+>
+  <Download className="h-4 w-4" />
+  Lebenslauf 🇩🇪
+</a> 
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary/10"
