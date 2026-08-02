@@ -33,7 +33,6 @@ export function Navbar() {
               GMP Cognition<span className="text-secondary">.ai</span>
             </span>
           </a>
-
           <div className="hidden items-center gap-1 lg:flex">
             {navLinks.map((link) => (
               <a
@@ -42,8 +41,9 @@ export function Navbar() {
                 className="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-primary/10 hover:text-foreground"
               >
                 {link.label}
+              </a>
+            ))}
           </div>
-
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -53,7 +53,6 @@ export function Navbar() {
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
-
         {open && (
           <div className="glass mt-2 flex flex-col gap-1 rounded-2xl p-3 lg:hidden">
             {navLinks.map((link) => (
@@ -72,3 +71,4 @@ export function Navbar() {
     </header>
   );
 }
+
