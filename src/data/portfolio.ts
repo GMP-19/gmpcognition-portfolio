@@ -137,7 +137,7 @@ export const certificationGroups = [
         title: "Fundamentals of Cybersecurity (EDU-102)",
         issuer: "Zscaler Academy",
         date: "May 2024",
-        validity: "May 2024 – May 2026",
+        validity: "",
         certNo: "g4ds42rg376p",
         tasks: [],
       },

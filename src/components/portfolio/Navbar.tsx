@@ -30,7 +30,7 @@ export function Navbar() {
               P
             </span>
             <span className="truncate font-display text-sm font-semibold tracking-tight">
-              Praveen<span className="text-secondary">.ai</span>
+              GMP Cognition<span className="text-secondary">.ai</span>
             </span>
           </a>
 
