@@ -444,6 +444,36 @@ export const projects = [
     github: "",
     accent: "primary" as const,
   },
+  {
+    title: "Linear Regression",
+    subtitle: "Predictive modelling from scratch",
+    period: "",
+    description:
+      "Implementation of linear regression for predictive modelling, covering data preparation, model fitting, evaluation metrics and visualisation of the fitted line against real data.",
+    tech: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-Learn"],
+    github: "https://github.com/GMP-19/Linear_Regression.git",
+    accent: "secondary" as const,
+  },
+  {
+    title: "Multiple Regression",
+    subtitle: "Multi-feature regression analysis",
+    period: "",
+    description:
+      "Multiple linear regression project exploring how several independent variables influence a target value, including feature handling, coefficient interpretation and model performance evaluation.",
+    tech: ["Python", "Scikit-Learn", "Pandas", "Data Analysis"],
+    github: "https://github.com/GMP-19/Multiple_Regression.git",
+    accent: "accent" as const,
+  },
+  {
+    title: "Guessing Number Game",
+    subtitle: "Interactive Python mini-game",
+    period: "",
+    description:
+      "A console-based number guessing game built in Python featuring randomised targets, user input validation and feedback-driven hints until the correct number is found.",
+    tech: ["Python", "Logic Building", "CLI"],
+    github: "https://github.com/GMP-19/Guessing-Number-Game.git",
+    accent: "primary" as const,
+  },
 ];
 
 export const achievements = [
