@@ -42,16 +42,6 @@ export function Navbar() {
                 className="rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-primary/10 hover:text-foreground"
               >
                 {link.label}
-              </a>
-            ))}
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-2 rounded-full bg-gradient-brand px-4 py-2 text-sm font-medium text-foreground transition-transform hover:scale-105"
-            >
-              Resume
-            </a>
           </div>
 
           <button
