@@ -171,7 +171,7 @@ export function Hero() {
                 }}
               />
               <img
-                src={profilePhoto.url}
+                src={profilePhoto}
                 alt="Praveen Kumar Gopinath Manjula"
                 className="relative h-full w-full rounded-full object-cover"
               />
