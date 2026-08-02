@@ -48,12 +48,12 @@ export function About() {
           <Reveal className="glass glass-hover rounded-3xl p-8">
             <div className="space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                Originally from India, he completed his Bachelor's degree in Artificial Intelligence
+                Originally from India, I completed my Bachelor's degree in Artificial Intelligence
                 at SRM University, Chennai, graduating in 2025 before relocating to Germany to
-                continue his higher education.
+                continue my higher education.
               </p>
               <p>
-                He enjoys working with Artificial Intelligence, Machine Learning, Data Science,
+                I enjoy working with Artificial Intelligence, Machine Learning, Data Science,
                 Computer Vision, Cloud Computing, IoT, and Cybersecurity.
               </p>
             </div>
