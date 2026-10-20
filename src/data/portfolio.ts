@@ -424,17 +424,18 @@ export const skillGroups = [
   },
 ] as const;
 
+
 export const projects = [
   {
     title: "Sensor Anomaly Detection API",
     subtitle: "Machine learning API for sensor anomaly detection",
-    period: "October 2026",
+    period: "October 2026 – Present",
     description:
-      "Built a machine learning API using FastAPI and Isolation Forest to identify unusual sensor observations from NASA C-MAPSS FD001 data. Saved the trained model and feature metadata, implemented health-check and prediction endpoints, validated API inputs, and tested prediction responses.",
+      "Built a FastAPI service using an Isolation Forest model trained on NASA C-MAPSS FD001 sensor data. Saved the trained model and feature metadata, implemented health-check and prediction endpoints, validated API inputs, and tested API responses.",
     tech: [
       "Python",
-      "Scikit-Learn",
       "FastAPI",
+      "Scikit-Learn",
       "Pandas",
       "NumPy",
       "Joblib",
@@ -444,11 +445,11 @@ export const projects = [
     accent: "primary" as const,
   },
   {
-    title: "Real-Time Sensor Anomaly Detection",
-    subtitle: "Unsupervised anomaly detection with Isolation Forest",
-    period: "September – October 2026",
+    title: "Real-Time Sensor Anomaly Detection and Monitoring System Using Isolation Forest",
+    subtitle: "Unsupervised anomaly detection and sensor monitoring",
+    period: "September 2026 – October 2026",
     description:
-      "Developed an unsupervised anomaly-detection system using the NASA C-MAPSS FD001 dataset. Analyzed sensor observations, selected variable sensor features, detected unusual observations using Isolation Forest, explored model sensitivity, and simulated sequential sensor monitoring.",
+      "Developed an unsupervised anomaly-detection system using 20,631 sensor observations from 100 engines in the NASA C-MAPSS FD001 dataset. Selected 15 variable sensor features, detected 1,032 anomalies (5.0%) using Isolation Forest, explored model sensitivity, and simulated sequential sensor monitoring.",
     tech: [
       "Python",
       "Scikit-Learn",
@@ -461,32 +462,32 @@ export const projects = [
     accent: "secondary" as const,
   },
   {
-    title: "S.H.A.D.Y.",
-    subtitle: "Smart Human Activity Detection Using YOLO",
-    period: "February – April 2021",
+    title: "Smart Sensor Network for Environmental Monitoring",
+    subtitle: "IoT-based environmental data collection",
+    period: "April 2026 – September 2026",
     description:
-      "Developed a human activity detection project using the YOLO deep learning framework and OpenCV, focused on computer vision applications for activity recognition and surveillance.",
-    tech: ["Python", "YOLO", "OpenCV", "Deep Learning", "Computer Vision"],
-    github: "https://github.com/samplerg/S.H.A.D.Y.git",
-    accent: "primary" as const,
-  },
-  {
-    title: "IoT ESP32 Computer Vision Application",
-    subtitle: "Smart camera and cloud-based monitoring",
-    period: "May – September 2022",
-    description:
-      "Worked on an ESP32-based smart camera application involving computer vision and cloud dashboards for monitoring and connected-device applications.",
-    tech: ["ESP32", "Arduino", "Computer Vision", "IoT", "Cloud"],
+      "Developed an IoT-based sensor network for real-time environmental data collection, integrating temperature, humidity, and air-quality sensors with cloud-based monitoring and data visualization.",
+    tech: ["ESP32", "Sensors", "Python", "IoT", "AWS"],
     github: "",
     accent: "secondary" as const,
   },
   {
-    title: "Multiple Regression",
-    subtitle: "Multi-feature regression analysis",
-    period: "",
+    title: "S.H.A.D.Y. – Smart Human Activity Detection Using YOLO",
+    subtitle: "Computer vision for human activity detection",
+    period: "January 2025 – April 2025",
     description:
-      "Implemented multiple linear regression to investigate relationships between multiple independent variables and a target value, including feature handling, coefficient interpretation, and model performance evaluation.",
-    tech: ["Python", "Scikit-Learn", "Pandas", "Data Analysis"],
+      "Developed a computer vision monitoring system using YOLO, OpenCV, and Flask, with object, fall, social-distancing, and vehicle-crash detection modules. Implemented multiple video input modes and event validation before email alerts.",
+    tech: ["Python", "YOLO", "OpenCV", "Flask", "Computer Vision"],
+    github: "https://github.com/samplerg/S.H.A.D.Y.git",
+    accent: "primary" as const,
+  },
+  {
+    title: "Regression Model for Predictive Analysis",
+    subtitle: "Regression modelling and performance evaluation",
+    period: "January 2024 – March 2024",
+    description:
+      "Developed and compared regression models for predictive analysis, applied feature engineering and hyperparameter tuning, and evaluated model performance using R², MAE, and RMSE.",
+    tech: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
     github: "https://github.com/GMP-19/Multiple_Regression.git",
     accent: "accent" as const,
   },
@@ -495,7 +496,7 @@ export const projects = [
     subtitle: "Predictive modelling from scratch",
     period: "",
     description:
-      "Implemented linear regression for predictive modelling, covering data preparation, model fitting, evaluation metrics, and visualisation of the fitted line against observed data.",
+      "Implemented linear regression for predictive modelling, covering data preparation, model fitting, evaluation metrics, and visualization of the fitted line against observed data.",
     tech: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-Learn"],
     github: "https://github.com/GMP-19/Linear_Regression.git",
     accent: "secondary" as const,
@@ -525,12 +526,13 @@ export const projects = [
     subtitle: "Interactive Python mini-game",
     period: "",
     description:
-      "Built a console-based number guessing game featuring randomised targets, user input validation, and feedback-driven hints until the correct number is found.",
+      "Built a console-based number guessing game featuring randomized targets, user input validation, and feedback-driven hints until the correct number is found.",
     tech: ["Python", "Logic Building", "CLI"],
     github: "https://github.com/GMP-19/Guessing-Number-Game.git",
     accent: "primary" as const,
   },
 ];
+
 
 export const achievements = [
   { title: "AWS Academy AI Internship", org: "AICTE • EduSkills • AWS Academy" },
