@@ -1,3 +1,4 @@
+
 export const profile = {
   name: "Praveen Kumar Gopinath Manjula",
   roles: [
@@ -113,7 +114,12 @@ export const internships = [
     title: "Cybersecurity Virtual Internship",
     issuers: ["AICTE", "EduSkills", "Palo Alto Networks"],
     period: "September – November 2023",
-    topics: ["Threat Detection", "Firewalls", "Network Defence", "Cybersecurity"],
+    topics: [
+      "Threat Detection",
+      "Firewalls",
+      "Network Defence",
+      "Cybersecurity",
+    ],
   },
   {
     title: "Zero Trust Cloud Security Internship",
@@ -346,7 +352,12 @@ export const certificationGroups = [
 ];
 
 export const skillGroups = [
-  { icon: "code", title: "Programming", items: ["Python", "SQL"], level: 88 },
+  {
+    icon: "code",
+    title: "Programming",
+    items: ["Python", "SQL"],
+    level: 88,
+  },
   {
     icon: "brain",
     title: "Artificial Intelligence",
@@ -356,7 +367,11 @@ export const skillGroups = [
   {
     icon: "eye",
     title: "Computer Vision",
-    items: ["Object Detection", "Image Processing", "Human Activity Recognition"],
+    items: [
+      "Object Detection",
+      "Image Processing",
+      "Human Activity Recognition",
+    ],
     level: 86,
   },
   {
@@ -374,7 +389,13 @@ export const skillGroups = [
   {
     icon: "shield",
     title: "Cybersecurity",
-    items: ["Zero Trust", "Cloud Security", "Network Defence", "Palo Alto", "Zscaler"],
+    items: [
+      "Zero Trust",
+      "Cloud Security",
+      "Network Defence",
+      "Palo Alto",
+      "Zscaler",
+    ],
     level: 75,
   },
   {
@@ -405,23 +426,78 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "S.H.A.D.Y",
+    title: "Sensor Anomaly Detection API",
+    subtitle: "Machine learning API for sensor anomaly detection",
+    period: "October 2026",
+    description:
+      "Built a machine learning API using FastAPI and Isolation Forest to identify unusual sensor observations from NASA C-MAPSS FD001 data. Saved the trained model and feature metadata, implemented health-check and prediction endpoints, validated API inputs, and tested prediction responses.",
+    tech: [
+      "Python",
+      "Scikit-Learn",
+      "FastAPI",
+      "Pandas",
+      "NumPy",
+      "Joblib",
+      "REST API",
+    ],
+    github: "https://github.com/GMP-19/sensor-anomaly-detection-api",
+    accent: "primary" as const,
+  },
+  {
+    title: "Real-Time Sensor Anomaly Detection",
+    subtitle: "Unsupervised anomaly detection with Isolation Forest",
+    period: "September – October 2026",
+    description:
+      "Developed an unsupervised anomaly-detection system using the NASA C-MAPSS FD001 dataset. Analyzed sensor observations, selected variable sensor features, detected unusual observations using Isolation Forest, explored model sensitivity, and simulated sequential sensor monitoring.",
+    tech: [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Jupyter Notebook",
+    ],
+    github: "https://github.com/GMP-19/Real-time-sensor-anomaly-detection",
+    accent: "secondary" as const,
+  },
+  {
+    title: "S.H.A.D.Y.",
     subtitle: "Smart Human Activity Detection Using YOLO",
     period: "February – April 2021",
     description:
-      "Built an intelligent real-time human activity recognition system using the YOLO deep learning framework capable of detecting multiple human activities for surveillance and smart automation applications.",
-    tech: ["Python", "YOLO", "OpenCV", "Deep Learning"],
+      "Developed a human activity detection project using the YOLO deep learning framework and OpenCV, focused on computer vision applications for activity recognition and surveillance.",
+    tech: ["Python", "YOLO", "OpenCV", "Deep Learning", "Computer Vision"],
     github: "https://github.com/samplerg/S.H.A.D.Y.git",
     accent: "primary" as const,
   },
   {
     title: "IoT ESP32 Computer Vision Application",
-    subtitle: "Smart camera with cloud dashboards",
+    subtitle: "Smart camera and cloud-based monitoring",
     period: "May – September 2022",
     description:
-      "Developed an ESP32-based smart camera system integrated with cloud dashboards for real-time image recognition, remote monitoring, and intelligent environmental automation.",
-    tech: ["ESP32", "Arduino", "Computer Vision", "Cloud"],
+      "Worked on an ESP32-based smart camera application involving computer vision and cloud dashboards for monitoring and connected-device applications.",
+    tech: ["ESP32", "Arduino", "Computer Vision", "IoT", "Cloud"],
     github: "",
+    accent: "secondary" as const,
+  },
+  {
+    title: "Multiple Regression",
+    subtitle: "Multi-feature regression analysis",
+    period: "",
+    description:
+      "Implemented multiple linear regression to investigate relationships between multiple independent variables and a target value, including feature handling, coefficient interpretation, and model performance evaluation.",
+    tech: ["Python", "Scikit-Learn", "Pandas", "Data Analysis"],
+    github: "https://github.com/GMP-19/Multiple_Regression.git",
+    accent: "accent" as const,
+  },
+  {
+    title: "Linear Regression",
+    subtitle: "Predictive modelling from scratch",
+    period: "",
+    description:
+      "Implemented linear regression for predictive modelling, covering data preparation, model fitting, evaluation metrics, and visualisation of the fitted line against observed data.",
+    tech: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-Learn"],
+    github: "https://github.com/GMP-19/Linear_Regression.git",
     accent: "secondary" as const,
   },
   {
@@ -429,7 +505,7 @@ export const projects = [
     subtitle: "CRUD application with persistent storage",
     period: "January – February 2022",
     description:
-      "Designed a command-line Contact Management application supporting CRUD operations with persistent file storage using C programming.",
+      "Designed a command-line contact management application supporting create, read, update, and delete operations with persistent file storage using C programming.",
     tech: ["C", "File Handling", "Data Structures"],
     github: "",
     accent: "accent" as const,
@@ -439,50 +515,20 @@ export const projects = [
     subtitle: "Dynamic calendar generator",
     period: "January – March 2022",
     description:
-      "Created a dynamic calendar generator capable of handling leap years and generating accurate yearly calendars.",
+      "Created a dynamic calendar generator designed to handle leap years and generate yearly calendars.",
     tech: ["C Programming"],
     github: "",
     accent: "primary" as const,
-  },
-  {
-    title: "Linear Regression",
-    subtitle: "Predictive modelling from scratch",
-    period: "",
-    description:
-      "Implementation of linear regression for predictive modelling, covering data preparation, model fitting, evaluation metrics and visualisation of the fitted line against real data.",
-    tech: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-Learn"],
-    github: "https://github.com/GMP-19/Linear_Regression.git",
-    accent: "secondary" as const,
-  },
-  {
-    title: "Multiple Regression",
-    subtitle: "Multi-feature regression analysis",
-    period: "",
-    description:
-      "Multiple linear regression project exploring how several independent variables influence a target value, including feature handling, coefficient interpretation and model performance evaluation.",
-    tech: ["Python", "Scikit-Learn", "Pandas", "Data Analysis"],
-    github: "https://github.com/GMP-19/Multiple_Regression.git",
-    accent: "accent" as const,
   },
   {
     title: "Guessing Number Game",
     subtitle: "Interactive Python mini-game",
     period: "",
     description:
-      "A console-based number guessing game built in Python featuring randomised targets, user input validation and feedback-driven hints until the correct number is found.",
+      "Built a console-based number guessing game featuring randomised targets, user input validation, and feedback-driven hints until the correct number is found.",
     tech: ["Python", "Logic Building", "CLI"],
     github: "https://github.com/GMP-19/Guessing-Number-Game.git",
     accent: "primary" as const,
-  },
-  {
-    title: "Real-Time Sensor Anomaly Detection",
-    subtitle: "Sensor monitoring using Isolation Forest",
-    period: "September 2026 – october 2026",
-    description:
-      "Developed an unsupervised anomaly-detection system using 20,631 sensor observations from 100 engines in the NASA C-MAPSS FD001 dataset. Selected 15 variable sensor features and detected 1,032 anomalies (5.0%) using Isolation Forest. Evaluated model sensitivity across different contamination and estimator settings and simulated sequential real-time monitoring.",
-    tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter"],
-    github: "https://github.com/GMP-19/Real-time-sensor-anomaly-detection",
-    accent: "secondary" as const,
   },
 ];
 
