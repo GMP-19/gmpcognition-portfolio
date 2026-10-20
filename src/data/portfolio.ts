@@ -481,7 +481,7 @@ export const projects = [
     description:
       "Developed an unsupervised anomaly-detection system using 20,631 sensor observations from 100 engines in the NASA C-MAPSS FD001 dataset. Selected 15 variable sensor features and detected 1,032 anomalies (5.0%) using Isolation Forest. Evaluated model sensitivity across different contamination and estimator settings and simulated sequential real-time monitoring.",
     tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Jupyter"],
-    github: "",
+    github: "https://github.com/GMP-19/Real-time-sensor-anomaly-detection",
     accent: "secondary" as const,
   },
 ];
