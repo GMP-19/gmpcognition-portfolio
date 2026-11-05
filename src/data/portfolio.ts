@@ -353,9 +353,9 @@ export const certificationGroups = [
 
 export const skillGroups = [
   {
+  icon: "sparkles",
   title: "Generative AI & Large Language Models",
-  icon: Sparkles,
-  skills: [
+  items: [
     "Large Language Models (LLMs)",
     "Meta Llama 3.1",
     "Generative AI",
@@ -368,6 +368,7 @@ export const skillGroups = [
   ],
   level: 85,
 },
+
   {
     icon: "code",
     title: "Programming",
