@@ -426,6 +426,30 @@ export const skillGroups = [
 
 
 export const projects = [
+  
+{
+  title: "Fine-Tuning LLM for Logical Reasoning",
+  subtitle: "Fine-tuning Meta Llama 3.1 8B Instruct using LoRA and QLoRA",
+  period: "October 2026 – November 2026",
+  description:
+    "Fine-tuned Meta Llama 3.1 8B Instruct for logical reasoning tasks using the LogiQA dataset. Applied parameter-efficient fine-tuning with LoRA and 4-bit quantization (QLoRA) using Python, PyTorch, Hugging Face Transformers, and PEFT. Completed 922 training steps and evaluated the model, achieving 46.08% test accuracy and a macro F1-score of 0.46.",
+  tech: [
+    "Python",
+    "PyTorch",
+    "Meta Llama 3.1 8B Instruct",
+    "LoRA",
+    "QLoRA",
+    "Hugging Face Transformers",
+    "PEFT",
+    "LogiQA",
+    "Google Colab",
+    "NVIDIA T4 GPU"
+  ],
+  github:
+    "https://github.com/GMP-19/-Fine-Tuning-LLM-for-Logical-Reasoning",
+  accent: "primary"
+},
+
   {
     title: "Sensor Anomaly Detection API",
     subtitle: "Machine learning API for sensor anomaly detection",
